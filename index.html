@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
+
+
+</head>
+<body>
+     <div class="banner">
+        <a href="#none" class="hambuger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="logo">
+            <img src="./img/UnderArmour LogoWhite.jpg" alt="">
+        </div>
+        <div class="m-logo">
+            <img src="./img/UndeArmourLogoBlack.png" alt="">
+        </div>
+        <div class="icon-box">
+            <form class="search-form">
+                <input type="search" class="search-input">
+                <button type="submit" class="search-btn">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47.4451 47.4983L50.7244 50.7776M50.7249 55.0168L63.4534 67.7487C64.6243 68.9199 66.523 68.9201 67.6941 67.749C68.8649 66.5782 68.865 64.6799 67.6944 63.5089L54.9659 50.777C53.795 49.6058 51.8963 49.6057 50.7252 50.7767C49.5544 51.9476 49.5542 53.8458 50.7249 55.0168Z" stroke="#" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15.5967 29.0688C17.3584 22.494 22.494 17.3584 29.0688 15.5967C35.6437 13.8349 42.6591 15.7147 47.4722 20.5278C52.2854 25.341 54.1651 32.3563 52.4034 38.9312C50.6416 45.5061 45.5061 50.6416 38.9312 52.4034C32.3563 54.1651 25.341 52.2854 20.5278 47.4722C15.7147 42.6591 13.8349 35.6437 15.5967 29.0688Z" stroke="#" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </form>
+            <div class="icon">
+                <div class="heart">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M39.7279 23.9285L36.8995 21.1C34.274 18.4745 30.713 16.9995 27 16.9995C23.287 16.9995 19.726 18.4745 17.1005 21.1C14.475 23.7255 13 27.2865 13 30.9995C13 34.7125 14.475 38.2735 17.1005 40.899L31.1813 54.9798C31.2016 55.0003 31.222 55.0208 31.2425 55.0413L38.3136 62.1124C38.7041 62.5029 39.216 62.6982 39.7279 62.6982" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M39.728 23.9283L42.5563 21.1C45.1818 18.4745 48.7428 16.9995 52.4558 16.9995C56.1688 16.9995 59.7298 18.4745 62.3553 21.1C64.9808 23.7255 66.4558 27.2865 66.4558 30.9995C66.4558 34.7125 64.9808 38.2735 62.3553 40.899L41.1421 62.1122C40.7516 62.5027 40.2398 62.698 39.728 62.698" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                </div>
+                <div class="user">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M60 70.0002H20C17.7909 70.0002 16 68.2094 16 66.0002V64.6639C16 58.8513 19.6061 53.6486 25.049 51.6087C34.6889 47.9957 45.3111 47.9957 54.951 51.6087C60.3939 53.6486 64 58.8513 64 64.6639V66.0002C64 68.2094 62.2091 70.0002 60 70.0002Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M33.901 38.8673C37.729 40.8336 42.2702 40.8336 46.0981 38.8673C49.6607 37.0373 52.2131 33.7042 53.0512 29.7878L53.2748 28.7425C54.1318 24.7375 53.2164 20.5576 50.764 17.2773L50.4049 16.797C47.9521 13.5163 44.0958 11.5845 39.9996 11.5845C35.9034 11.5845 32.047 13.5163 29.5943 16.797L29.2352 17.2773C26.7827 20.5576 25.8674 24.7375 26.7243 28.7425L26.948 29.7878C27.786 33.7042 30.3385 37.0373 33.901 38.8673Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                </div>
+                <div class="bag">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.7125 31.9162C17.8778 30.8148 18.8239 30 19.9376 30H60.0623C61.176 30 62.1222 30.8148 62.2874 31.9162L67.6124 67.4162C67.8165 68.7766 66.7629 70 65.3873 70H14.6126C13.2371 70 12.1835 68.7766 12.3875 67.4162L17.7125 31.9162Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M52 38V22C52 15.3726 46.6274 10 40 10C33.3726 10 28 15.3726 28 22V38" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="menu-bar">
+        <ul>
+            <li>축구</li>
+            <li>Curry</li>
+            <li>온라인 단독</li>
+            <li>NEW</li>
+            <li>남성</li>
+            <li>여성</li>
+            <li>신발</li>
+            <li>악세사리</li>
+            <li>아울렛</li>
+        </ul>
+     </div>
+     <section class="sub-menu">
+        <div class="sub-menu-box1">
+            <a href="#none">
+                <img src="./img/sec-2_2.jpg" alt="">
+                <p>Curry Back-To-Back MVP Pack</p>
+                <p class="sub-menu-go">보러가기</p>
+            </a>
+        </div>
+        <div class="sub-menu-box2">
+            <a href="#none">
+                <ul>
+                    <li class="sub-menu-main">Featured</li>
+                    <li>커리 ‘Unanimous’ Pack</li>
+                    <li>커리 1 Low FloTro ‘Draft Day’</li>
+                    <li>커리 플로우 10 ‘Fether To Son’</li>
+                </ul>
+            </a>
+        </div>
+        <div class="sub-menu-box3">
+            <a href="#none">
+                <ul>
+                    <li class="sub-menu-main">Curry Brand</li>
+                    <li>커리 10 컬렉션</li>
+                    <li>커리 레트로 컬렉션</li>
+                    <li>커리 골프 컬렉션</li>
+                    <li>커리 어패럴 컬렉션</li>
+                </ul>
+            </a>
+        </div>
+     </section>
+     <div class="m-sub">
+        <div class="sub-box">
+            <a href="#none">
+                <p>NEW</p>
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26 19.068L15.591 8.65903C14.7123 7.78032 13.2877 7.78032 12.409 8.65903L2 19.068" stroke="#6A6A6A" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </a>
+            <a href="#none">
+                <p>축구</p>
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26 19.068L15.591 8.65903C14.7123 7.78032 13.2877 7.78032 12.409 8.65903L2 19.068" stroke="#6A6A6A" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </a>
+            <a href="#none">
+                <p>Curry</p>
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26 19.068L15.591 8.65903C14.7123 7.78032 13.2877 7.78032 12.409 8.65903L2 19.068" stroke="#6A6A6A" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </a>
+            <a href="#none">
+                <p>남성</p>
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26 19.068L15.591 8.65903C14.7123 7.78032 13.2877 7.78032 12.409 8.65903L2 19.068" stroke="#6A6A6A" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </a>
+            <a href="#none">
+                <p>여성</p>
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26 19.068L15.591 8.65903C14.7123 7.78032 13.2877 7.78032 12.409 8.65903L2 19.068" stroke="#6A6A6A" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </a>
+            <a href="#none">
+                <p>신발</p>
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26 19.068L15.591 8.65903C14.7123 7.78032 13.2877 7.78032 12.409 8.65903L2 19.068" stroke="#6A6A6A" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </a>
+            <a href="#none">
+                <p>액세사리</p>
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26 19.068L15.591 8.65903C14.7123 7.78032 13.2877 7.78032 12.409 8.65903L2 19.068" stroke="#6A6A6A" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </a>
+            <a href="#none">
+                <p>온라인 단독</p>
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26 19.068L15.591 8.65903C14.7123 7.78032 13.2877 7.78032 12.409 8.65903L2 19.068" stroke="#6A6A6A" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </a>
+        </div>
+     </div>
+     <section>
+        <div class="sec-1">
+            <div class="sec-1-img">
+                <img src="./img/main.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="sec-2">
+            <div class="container">
+                <h1>UNDER ARMOUR PICK 베스트 아이템</h1>
+                <div class="sec-bar swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#none">
+                            <div class="sec-2-box1">
+                                <div class="box-2">
+                                    <img src="./img/sec-1.webp" alt="">
+                                    <h2>1</h2>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="h-txt">유니섹스 커리 8팀 농구화</p>
+                                    <p class="b-txt">₩122,500</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#none" class="img2">
+                            <div class="sec-2-box2">
+                                <div class="box-2">
+                                    <img src="./img/sec-1_2.jpeg" alt="">
+                                    <h2>2</h2>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="h-txt">남성 UA RUSH™ ColdGear ® 레깅스</p>
+                                    <p class="b-txt">₩26,700</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#none">
+                            <div class="sec-2-box3">
+                                <div class="box-2">
+                                    <img src="./img/sec-1_3.jpeg" alt="">
+                                    <h2>3</h2>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="h-txt">남성 UA 로고 엠브로이더드 헤비웨이트 반팔</p>
+                                    <p class="b-txt">₩49,000</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#none">
+                            <div class="sec-2-box4">
+                                <div class="box-2">
+                                    <img src="./img/sec-1_4.webp" alt="">
+                                    <h2>4</h2>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="h-txt">남성 UA 서지 3 슬립 러닝화</p>
+                                    <p class="b-txt">₩89,000</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide-box swiper-slide">
+                        <a href="#none">
+                            <div class="sec-2-box5">
+                                <div class="box-2">
+                                    <img src="./img/sec-1_5.jpeg" alt="">
+                                    <h2>5</h2>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="h-txt">남성 UA 안사 그래픽 슬라이즈</p>
+                                    <p class="b-txt">₩21,000</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide-box swiper-slide">
+                        <a href="#none">
+                            <div class="sec-2-box6">
+                                <div class="box-2">
+                                    <img src="./img/sec-1_6.webp" alt="">
+                                    <h2>6</h2>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="h-txt">UA 언디나이어블 5.0 라지 더플 백</p>
+                                    <p class="b-txt">₩55,300</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide-box swiper-slide">
+                        <a href="#none">
+                            <div class="sec-2-box7">
+                                <div class="box-2">
+                                    <img src="./img/sec-1_7.jpeg" alt="">
+                                    <h2>7</h2>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="h-txt">남성 프로젝트 락 터프기어 아머프린트 탱크</p>
+                                    <p class="b-txt">₩47,400</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide-box swiper-slide">
+                        <a href="#none">
+                            <div class="sec-2-box8">
+                                <div class="box-2">
+                                    <img src="./img/sec-1_8.webp" alt="">
+                                    <h2>8</h2>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="h-txt">여성 APAC 우븐 재킷</p>
+                                    <p class="b-txt">₩69,300</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide-box swiper-slide">
+                        <a href="#none">
+                            <div class="sec-2-box9">
+                                <div class="box-2">
+                                    <img src="./img/sec-1_9.jpeg" alt="">
+                                    <h2>9</h2>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="h-txt">여성 UA 서밋 니트 풀 집</p>
+                                    <p class="b-txt">₩32,700</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide-box swiper-slide">
+                        <a href="#none">
+                            <div class="sec-2-box10">
+                                <div class="box-2">
+                                    <img src="./img/sec-1_10.webp" alt="">
+                                    <h2>10</h2>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="h-txt">유니섹스 APAC 셰르파 스웨킷</p>
+                                    <p class="b-txt">₩79,600</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sec-3">
+            <a href="#none">
+                <div class="sec-3_box1">
+                    <div class="sec-3-imgbox">
+                        <img src="./img/sec-2.jpg" alt="">
+                    </div>
+                        <div class="sec-3-txt-box">
+                        <p>SUMMER 신상품 프로모션</p>
+                        <h2>여름 신상품을 구매하고 다양한 혜택을 누려보세요.</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="#none">
+                <div class="sec-3_box2">
+                    <div class="sec-3-imgbox">
+                        <img src="./img/sec-2_2.jpg" alt="">
+                    </div>
+                    <div class="sec-3-txt-box">
+                        <p>CURRY 1 + CURRY 2, RETRO</p>
+                        <h2>스테판 커리의 BACK-TO-BACK MVP 수상을 기념하기 위해</h2>
+                        <h2> 하나가 아닌 두 개의 커리 레트로 슈즈를 담은 농구화 팩을 다시 한 번 선보입니다.</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="sec_3">
+            <a href="#none" class="sec-3-1">
+                    <div class="sec-3-1-txtbox">
+                    <p class="txt-1">CURRY 1 + CURRY 2, RETRO</p>
+                    <p>스테판 커리의 BACK-TO-BACK MVP 수상</p>
+                    <p>을 기념하기 위해 하나가 아닌 두 개의</p>
+                    <p>커리 레트로 슈즈를 담은 농구화 </p>
+                    <p>팩을 다시 한 번 선보입니다.</p>
+                    </div>
+            </a>
+            <a href="#none" class="sec-3-2">
+                <div class="sec-3-2-txtbox">
+                    <p class="txt-2">SUMMER 신상품 프로모션</p>
+                    <p>여름 신상품을 구매하고 다양한 혜택을 누려보세요.</p>
+                </div>
+            </a>
+        </div>
+        <div class="sec-4">
+            <div class="sec_4-top">
+                <div class="top-txt">
+                    <h1>지금 만나는 신상품</h1>
+                </div>
+                <div class="sec-4-btn">
+                    <a href="#none" class="active" data-alt="tab1">TOP</a>
+                    <a href="#none" data-alt="tab2">OUTER</a>
+                    <a href="#none" data-alt="tab3">BOTTOM</a>
+                    <a href="#none" data-alt="tab4">SHOES</a>
+                </div>
+            </div>
+            <div class="sec-4-m">
+                <a href="#none" class="m-toptxt">
+                    TOP
+                </a>
+            </div>
+            <div id="tab1" class="sec-4-main active">
+                <a href="#none">
+                    
+                    <div class="sec-4-box1">
+                        <div class="sec-4_box">
+                            <img src="./img/sec-3.webp" alt="">
+                                <div class="heart-icon">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M39.7279 23.9285L36.8995 21.1C34.274 18.4745 30.713 16.9995 27 16.9995C23.287 16.9995 19.726 18.4745 17.1005 21.1C14.475 23.7255 13 27.2865 13 30.9995C13 34.7125 14.475 38.2735 17.1005 40.899L31.1813 54.9798C31.2016 55.0003 31.222 55.0208 31.2425 55.0413L38.3136 62.1124C38.7041 62.5029 39.216 62.6982 39.7279 62.6982" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M39.728 23.9283L42.5563 21.1C45.1818 18.4745 48.7428 16.9995 52.4558 16.9995C56.1688 16.9995 59.7298 18.4745 62.3553 21.1C64.9808 23.7255 66.4558 27.2865 66.4558 30.9995C66.4558 34.7125 64.9808 38.2735 62.3553 40.899L41.1421 62.1122C40.7516 62.5027 40.2398 62.698 39.728 62.698" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                </div>
+                        </div>
+                            <div class="sec-4-txtbox">
+                                <p class="sec-4-txt">Under Armour</p>
+                                <p>남성 UA 카모 체스트 스트라이프 반팔</p>
+                                <h3>₩39,000</h3>
+                            </div>
+                    </div>
+                </a>
+                <a href="#none">
+                <div class="sec-4-box2">
+                    <div class="sec-4_box">
+                        <img src="./img/sec-3_2.jpeg" alt="">
+                            <div class="heart-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M39.7279 23.9285L36.8995 21.1C34.274 18.4745 30.713 16.9995 27 16.9995C23.287 16.9995 19.726 18.4745 17.1005 21.1C14.475 23.7255 13 27.2865 13 30.9995C13 34.7125 14.475 38.2735 17.1005 40.899L31.1813 54.9798C31.2016 55.0003 31.222 55.0208 31.2425 55.0413L38.3136 62.1124C38.7041 62.5029 39.216 62.6982 39.7279 62.6982" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M39.728 23.9283L42.5563 21.1C45.1818 18.4745 48.7428 16.9995 52.4558 16.9995C56.1688 16.9995 59.7298 18.4745 62.3553 21.1C64.9808 23.7255 66.4558 27.2865 66.4558 30.9995C66.4558 34.7125 64.9808 38.2735 62.3553 40.899L41.1421 62.1122C40.7516 62.5027 40.2398 62.698 39.728 62.698" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </div>
+                    </div>
+                      <div class="sec-4-txtbox">
+                        <p class="sec-4-txt">Under Armour</p>
+                        <p>남성 커리 NFT 반팔</p>
+                        <h3>₩59,000</h3>
+                      </div>
+                </div>
+                </a>
+                <a href="#none">
+                <div class="sec-4-box3">
+                    <div class="sec-4_box">
+                    <img src="./img/sec-3_3.webp" alt="">
+                        <div class="heart-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M39.7279 23.9285L36.8995 21.1C34.274 18.4745 30.713 16.9995 27 16.9995C23.287 16.9995 19.726 18.4745 17.1005 21.1C14.475 23.7255 13 27.2865 13 30.9995C13 34.7125 14.475 38.2735 17.1005 40.899L31.1813 54.9798C31.2016 55.0003 31.222 55.0208 31.2425 55.0413L38.3136 62.1124C38.7041 62.5029 39.216 62.6982 39.7279 62.6982" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M39.728 23.9283L42.5563 21.1C45.1818 18.4745 48.7428 16.9995 52.4558 16.9995C56.1688 16.9995 59.7298 18.4745 62.3553 21.1C64.9808 23.7255 66.4558 27.2865 66.4558 30.9995C66.4558 34.7125 64.9808 38.2735 62.3553 40.899L41.1421 62.1122C40.7516 62.5027 40.2398 62.698 39.728 62.698" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                      <div class="sec-4-txtbox">
+                        <p class="sec-4-txt">Under Armour</p>
+                        <p>남성 UA 아이소-칠 론치 런 햇</p>
+                        <h3>₩29,000</h3>
+                    </div>
+                </div>
+                </a>
+                <a href="#none" class="sec-4-last-img">
+                <div class="sec-4-box4">
+                    <img src="./img/sec-3_4.jpeg" alt="">
+                </div>
+                </a>
+            </div>
+            <div class="sec-4-m">
+                <a href="#none" class="m-toptxt">
+                    OUTER
+                </a>
+            </div>
+            <div id="tab2" class="sec-4-main">
+                <a href="#none">
+                <div class="sec-4-box1">
+                    <div class="sec-4_box">
+                        <img src="./img/outer1.jpeg" alt="">
+                            <div class="heart-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M39.7279 23.9285L36.8995 21.1C34.274 18.4745 30.713 16.9995 27 16.9995C23.287 16.9995 19.726 18.4745 17.1005 21.1C14.475 23.7255 13 27.2865 13 30.9995C13 34.7125 14.475 38.2735 17.1005 40.899L31.1813 54.9798C31.2016 55.0003 31.222 55.0208 31.2425 55.0413L38.3136 62.1124C38.7041 62.5029 39.216 62.6982 39.7279 62.6982" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M39.728 23.9283L42.5563 21.1C45.1818 18.4745 48.7428 16.9995 52.4558 16.9995C56.1688 16.9995 59.7298 18.4745 62.3553 21.1C64.9808 23.7255 66.4558 27.2865 66.4558 30.9995C66.4558 34.7125 64.9808 38.2735 62.3553 40.899L41.1421 62.1122C40.7516 62.5027 40.2398 62.698 39.728 62.698" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </div>
+                    </div>
+                        <div class="sec-4-txtbox">
+                            <p class="sec-4-txt">Under Armour</p>
+                            <p>남성 UA Strom 런 인슐레이트 하이브리드 재킷</p>
+                            <h3>₩129,000</h3>
+                        </div>
+                </div>
+                </a>
+                <a href="#none">
+                <div class="sec-4-box2">
+                    <div class="sec-4_box">
+                        <img src="./img/outer2.webp" alt="">
+                            <div class="heart-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M39.7279 23.9285L36.8995 21.1C34.274 18.4745 30.713 16.9995 27 16.9995C23.287 16.9995 19.726 18.4745 17.1005 21.1C14.475 23.7255 13 27.2865 13 30.9995C13 34.7125 14.475 38.2735 17.1005 40.899L31.1813 54.9798C31.2016 55.0003 31.222 55.0208 31.2425 55.0413L38.3136 62.1124C38.7041 62.5029 39.216 62.6982 39.7279 62.6982" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M39.728 23.9283L42.5563 21.1C45.1818 18.4745 48.7428 16.9995 52.4558 16.9995C56.1688 16.9995 59.7298 18.4745 62.3553 21.1C64.9808 23.7255 66.4558 27.2865 66.4558 30.9995C66.4558 34.7125 64.9808 38.2735 62.3553 40.899L41.1421 62.1122C40.7516 62.5027 40.2398 62.698 39.728 62.698" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </div>
+                    </div>
+                      <div class="sec-4-txtbox">
+                        <p class="sec-4-txt">Under Armour</p>
+                        <p>남성 프로젝트 락 브라마 재킷</p>
+                        <h3>₩104,300</h3>
+                      </div>
+                </div>
+                </a>
+                <a href="#none">
+                <div class="sec-4-box3">
+                    <div class="sec-4_box">
+                    <img src="./img/outer3.webp" alt="">
+                        <div class="heart-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M39.7279 23.9285L36.8995 21.1C34.274 18.4745 30.713 16.9995 27 16.9995C23.287 16.9995 19.726 18.4745 17.1005 21.1C14.475 23.7255 13 27.2865 13 30.9995C13 34.7125 14.475 38.2735 17.1005 40.899L31.1813 54.9798C31.2016 55.0003 31.222 55.0208 31.2425 55.0413L38.3136 62.1124C38.7041 62.5029 39.216 62.6982 39.7279 62.6982" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M39.728 23.9283L42.5563 21.1C45.1818 18.4745 48.7428 16.9995 52.4558 16.9995C56.1688 16.9995 59.7298 18.4745 62.3553 21.1C64.9808 23.7255 66.4558 27.2865 66.4558 30.9995C66.4558 34.7125 64.9808 38.2735 62.3553 40.899L41.1421 62.1122C40.7516 62.5027 40.2398 62.698 39.728 62.698" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                      <div class="sec-4-txtbox">
+                        <p class="sec-4-txt">Under Armour</p>
+                        <p>남성 UA 아웃런 더 레인 II 재킷</p>
+                        <h3>₩76,300</h3>
+                    </div>
+                </div>
+                </a>
+                <a href="#none" class="sec-4-last-img">
+                <div class="sec-4-box4">
+                    <img src="./img/outer4.webp" alt="">
+                </div>
+                </a>
+            </div>
+            <div class="sec-4-m">
+                <a href="#none" class="m-toptxt">
+                    BOTTOM
+                </a>
+            </div>
+            <div id="tab3" class="sec-4-main">
+                <a href="#none">
+                <div class="sec-4-box1">
+                    <div class="sec-4_box">
+                        <img src="./img/under1.jpeg" alt="">
+                            <div class="heart-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M39.7279 23.9285L36.8995 21.1C34.274 18.4745 30.713 16.9995 27 16.9995C23.287 16.9995 19.726 18.4745 17.1005 21.1C14.475 23.7255 13 27.2865 13 30.9995C13 34.7125 14.475 38.2735 17.1005 40.899L31.1813 54.9798C31.2016 55.0003 31.222 55.0208 31.2425 55.0413L38.3136 62.1124C38.7041 62.5029 39.216 62.6982 39.7279 62.6982" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M39.728 23.9283L42.5563 21.1C45.1818 18.4745 48.7428 16.9995 52.4558 16.9995C56.1688 16.9995 59.7298 18.4745 62.3553 21.1C64.9808 23.7255 66.4558 27.2865 66.4558 30.9995C66.4558 34.7125 64.9808 38.2735 62.3553 40.899L41.1421 62.1122C40.7516 62.5027 40.2398 62.698 39.728 62.698" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </div>
+                    </div>
+                        <div class="sec-4-txtbox">
+                            <p class="sec-4-txt">Under Armour</p>
+                            <p>남성 프로젝트 락 우븐 팬츠</p>
+                            <h3>₩90,300</h3>
+                        </div>
+                </div>
+                </a>
+                <a href="#none">
+                <div class="sec-4-box2">
+                    <div class="sec-4_box">
+                        <img src="./img/under2.webp" alt="">
+                            <div class="heart-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M39.7279 23.9285L36.8995 21.1C34.274 18.4745 30.713 16.9995 27 16.9995C23.287 16.9995 19.726 18.4745 17.1005 21.1C14.475 23.7255 13 27.2865 13 30.9995C13 34.7125 14.475 38.2735 17.1005 40.899L31.1813 54.9798C31.2016 55.0003 31.222 55.0208 31.2425 55.0413L38.3136 62.1124C38.7041 62.5029 39.216 62.6982 39.7279 62.6982" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M39.728 23.9283L42.5563 21.1C45.1818 18.4745 48.7428 16.9995 52.4558 16.9995C56.1688 16.9995 59.7298 18.4745 62.3553 21.1C64.9808 23.7255 66.4558 27.2865 66.4558 30.9995C66.4558 34.7125 64.9808 38.2735 62.3553 40.899L41.1421 62.1122C40.7516 62.5027 40.2398 62.698 39.728 62.698" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </div>
+                    </div>
+                      <div class="sec-4-txtbox">
+                        <p class="sec-4-txt">Under Armour</p>
+                        <p>남성 UA 라이벌 플리스 팬츠</p>
+                        <h3>₩69,000</h3>
+                      </div>
+                </div>
+                </a>
+                <a href="#none">
+                <div class="sec-4-box3">
+                    <div class="sec-4_box">
+                    <img src="./img/under3.jpeg" alt="">
+                        <div class="heart-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M39.7279 23.9285L36.8995 21.1C34.274 18.4745 30.713 16.9995 27 16.9995C23.287 16.9995 19.726 18.4745 17.1005 21.1C14.475 23.7255 13 27.2865 13 30.9995C13 34.7125 14.475 38.2735 17.1005 40.899L31.1813 54.9798C31.2016 55.0003 31.222 55.0208 31.2425 55.0413L38.3136 62.1124C38.7041 62.5029 39.216 62.6982 39.7279 62.6982" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M39.728 23.9283L42.5563 21.1C45.1818 18.4745 48.7428 16.9995 52.4558 16.9995C56.1688 16.9995 59.7298 18.4745 62.3553 21.1C64.9808 23.7255 66.4558 27.2865 66.4558 30.9995C66.4558 34.7125 64.9808 38.2735 62.3553 40.899L41.1421 62.1122C40.7516 62.5027 40.2398 62.698 39.728 62.698" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                      <div class="sec-4-txtbox">
+                        <p class="sec-4-txt">Under Armour</p>
+                        <p>남성 UA 라이벌 플리스 조거</p>
+                        <h3>₩69,000</h3>
+                    </div>
+                </div>
+                </a>
+                <a href="#none" class="sec-4-last-img">
+                <div class="sec-4-box4">
+                    <img src="./img/under4.webp" alt="">
+                </div>
+                </a>
+            </div>
+            <div class="sec-4-m">
+                <a href="#none" class="m-toptxt">
+                    SHOES
+                </a>
+            </div>
+            <div id="tab4" class="sec-4-main">
+                <a href="#none">
+                <div class="sec-4-box1">
+                    <div class="sec-4_box">
+                        <img src="./img/shoes1.webp" alt="">
+                            <div class="heart-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M39.7279 23.9285L36.8995 21.1C34.274 18.4745 30.713 16.9995 27 16.9995C23.287 16.9995 19.726 18.4745 17.1005 21.1C14.475 23.7255 13 27.2865 13 30.9995C13 34.7125 14.475 38.2735 17.1005 40.899L31.1813 54.9798C31.2016 55.0003 31.222 55.0208 31.2425 55.0413L38.3136 62.1124C38.7041 62.5029 39.216 62.6982 39.7279 62.6982" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M39.728 23.9283L42.5563 21.1C45.1818 18.4745 48.7428 16.9995 52.4558 16.9995C56.1688 16.9995 59.7298 18.4745 62.3553 21.1C64.9808 23.7255 66.4558 27.2865 66.4558 30.9995C66.4558 34.7125 64.9808 38.2735 62.3553 40.899L41.1421 62.1122C40.7516 62.5027 40.2398 62.698 39.728 62.698" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </div>
+                    </div>
+                        <div class="sec-4-txtbox">
+                            <p class="sec-4-txt">Under Armour</p>
+                            <p>남성 UA HOVR™ 소닉 6 러닝화</p>
+                            <h3>₩97,300</h3>
+                        </div>
+                </div>
+                </a>
+                <a href="#none">
+                <div class="sec-4-box2">
+                    <div class="sec-4_box">
+                        <img src="./img/shoes2.webp" alt="">
+                            <div class="heart-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M39.7279 23.9285L36.8995 21.1C34.274 18.4745 30.713 16.9995 27 16.9995C23.287 16.9995 19.726 18.4745 17.1005 21.1C14.475 23.7255 13 27.2865 13 30.9995C13 34.7125 14.475 38.2735 17.1005 40.899L31.1813 54.9798C31.2016 55.0003 31.222 55.0208 31.2425 55.0413L38.3136 62.1124C38.7041 62.5029 39.216 62.6982 39.7279 62.6982" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M39.728 23.9283L42.5563 21.1C45.1818 18.4745 48.7428 16.9995 52.4558 16.9995C56.1688 16.9995 59.7298 18.4745 62.3553 21.1C64.9808 23.7255 66.4558 27.2865 66.4558 30.9995C66.4558 34.7125 64.9808 38.2735 62.3553 40.899L41.1421 62.1122C40.7516 62.5027 40.2398 62.698 39.728 62.698" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </div>
+                    </div>
+                      <div class="sec-4-txtbox">
+                        <p class="sec-4-txt">Under Armour</p>
+                        <p>남성 UA 차지드 임펄스 3 러닝화</p>
+                        <h3>₩69,300</h3>
+                      </div>
+                </div>
+                </a>
+                <a href="#none">
+                <div class="sec-4-box3">
+                    <div class="sec-4_box">
+                    <img src="./img/shoes3.jpeg" alt="">
+                        <div class="heart-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M39.7279 23.9285L36.8995 21.1C34.274 18.4745 30.713 16.9995 27 16.9995C23.287 16.9995 19.726 18.4745 17.1005 21.1C14.475 23.7255 13 27.2865 13 30.9995C13 34.7125 14.475 38.2735 17.1005 40.899L31.1813 54.9798C31.2016 55.0003 31.222 55.0208 31.2425 55.0413L38.3136 62.1124C38.7041 62.5029 39.216 62.6982 39.7279 62.6982" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M39.728 23.9283L42.5563 21.1C45.1818 18.4745 48.7428 16.9995 52.4558 16.9995C56.1688 16.9995 59.7298 18.4745 62.3553 21.1C64.9808 23.7255 66.4558 27.2865 66.4558 30.9995C66.4558 34.7125 64.9808 38.2735 62.3553 40.899L41.1421 62.1122C40.7516 62.5027 40.2398 62.698 39.728 62.698" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                      <div class="sec-4-txtbox">
+                        <p class="sec-4-txt">Under Armour</p>
+                        <p>남성 UA Flow 벨로시티 윈드 2 CN 러닝화</p>
+                        <h3>₩118,300</h3>
+                    </div>
+                </div>
+                </a>
+                <a href="#none" class="sec-4-last-img">
+                <div class="sec-4-box4">
+                    <img src="./img/shoes4.webp" alt="">
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="sec-5">
+            <video src="./img/언더아머_SS18ProjectRock.mp4" autoplay muted loop playsinline data-keepplaying></video>
+        </div>
+        <div class="sec-6">
+            <div class="sec-6-top">
+                <h1>당신만을 위한 오늘의 추천</h1>
+            </div>
+            <div class="sec-6-main">
+                <a href="#none">
+                    <div class="sec-6-box1">
+                        <img src="./img/sec-5.webp" alt="">
+                        <div class="box-6-txtbox">
+                            <p class="box-6">Under Armour</p>
+                            <p>유니섹스 커리 1 + 커리 2 레트로 'Back-to-Back MVP' 농구화 팩</p>
+                            <h3>₩498,000</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#none">
+                    <div class="sec-6-box2">
+                        <img src="./img/sec-5_2.jpeg" alt="">
+                        <div class="box-6-txtbox">
+                            <p class="box-6">Under Armour</p>
+                            <p>UA 허슬 5.0 백팩</p>
+                            <h3>₩79,000</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#none">
+                    <div class="sec-6-box3">
+                        <img src="./img/sec-5_3.webp" alt="">
+                        <div class="box-6-txtbox">
+                            <p class="box-6">Under Armour</p>
+                            <p>남성 UA 3인치 퍼포먼스 손목 밴드 - 2장</p>
+                            <h3>₩10,000</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#none">
+                    <div class="sec-6-box4">
+                        <img src="./img/sec-5_4.jpeg" alt="">
+                        <div class="box-6-txtbox">
+                            <p class="box-6">Under Armour</p>
+                            <p>UA 아이소-칠 ArmourVent™ 버킷 햇</p>
+                            <h3>₩45,000</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="sec-7">
+            <div class="sec-7-txtbox">
+                <h1>OPEN YOUR MOUTAIN</h1>
+                <P>@Under Armour_Korea</P>
+            </div>
+            <div class="sec-7-main">
+                <a href="#none">
+                    <div class="sec-7-box">
+                        <img src="./img/Rectangle 12.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#none">
+                    <div class="sec-7-box">
+                        <img src="./img/Rectangle 13.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#none">
+                    <div class="sec-7-box">
+                        <img src="./img/Rectangle 14.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#none">
+                    <div class="sec-7-box">
+                        <img src="./img/Rectangle 15.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="txt-box1">
+                <p>UNDER AMOUR</p>
+                <p>채무지급보증안내당사는 고객님이 현금 결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.</p>
+                <p> 서비스가입사실확인</p>
+                <p>© 2023 Under Armour®, Inc.
+                    이용 약관 / 개인정보처리방침 / 쿠키 정책 / 회사 정보 / 사업자정보확인 / 쿠키 환경설정
+                    언더아머코리아(유) | 서울특별시 강남구 테헤란로 521, 28F | 대표: 박성희 | 사업자등록번호: 102-81-44827 | 통신판매업신고번호: 제 2017-서울강남-00220 호
+                    대표전화: 1577-9691 | Email: cskorea@underarmour.com | 개인정보보호책임자: 최성택 | 호스팅서비스: Salesforce.com, Inc.</p>
+            </div>
+            <div class="footer-r">
+                <div class="txt-box2">
+                    <p>전화상담</p>
+                    <p>1577-9691</p>
+                    <p>월-금 09:00-18:00 / 점심시간: 12:00~13:00</p>
+                    <p>문의하기</p>
+                </div>
+                <div class="txt-box3">
+                    <p>회사 정보</p>
+                    <p>Under Amour 스토리</p>
+                    <p>채용 안내</p>
+                </div>
+                <div class="txt-box4">
+                    <p>UA 소셜</p>
+                    <p>인스타그램</p>
+                    <p>페이스북</p>
+                    <p>유튜브</p>
+                </div>
+            </div>
+        </footer>
+     </section>
+</body>
+</html>
